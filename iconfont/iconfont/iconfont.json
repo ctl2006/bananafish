@@ -1,0 +1,128 @@
+{
+  "id": "4817394",
+  "name": "bilibili",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "43245250",
+      "name": "课堂",
+      "font_class": "ketang",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "43245236",
+      "name": "专栏",
+      "font_class": "zhuanlan",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "43245237",
+      "name": "活动",
+      "font_class": "huodong",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "43245239",
+      "name": "新歌热榜",
+      "font_class": "xingerebang",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "43245240",
+      "name": "直播",
+      "font_class": "zhibo",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "43245241",
+      "name": "社区中心",
+      "font_class": "shequzhongxin",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "43245235",
+      "name": "箭头",
+      "font_class": "jiantou",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "43233300",
+      "name": "消息",
+      "font_class": "xiaoxi",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "43239808",
+      "name": "大会员",
+      "font_class": "dahuiyuan",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "9097241",
+      "name": "历史",
+      "font_class": "lishi",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "12284220",
+      "name": "windmill",
+      "font_class": "fengche",
+      "unicode": "e827",
+      "unicode_decimal": 59431
+    },
+    {
+      "icon_id": "37973718",
+      "name": "收藏",
+      "font_class": "shoucang",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "42958710",
+      "name": "创作中心",
+      "font_class": "chuangzuozhongxin",
+      "unicode": "e708",
+      "unicode_decimal": 59144
+    },
+    {
+      "icon_id": "2306764",
+      "name": "BILIBILI_LOGO",
+      "font_class": "bilibili",
+      "unicode": "e6b4",
+      "unicode_decimal": 59060
+    },
+    {
+      "icon_id": "43217257",
+      "name": "TV",
+      "font_class": "TV",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "43217258",
+      "name": "search",
+      "font_class": "search",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "43217264",
+      "name": "download",
+      "font_class": "download",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    }
+  ]
+}

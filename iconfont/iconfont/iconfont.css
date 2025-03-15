@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4817394 */
+  src: url('iconfont.woff2?t=1738309456497') format('woff2'),
+       url('iconfont.woff?t=1738309456497') format('woff'),
+       url('iconfont.ttf?t=1738309456497') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ketang:before {
+  content: "\e60f";
+}
+
+.icon-zhuanlan:before {
+  content: "\e609";
+}
+
+.icon-huodong:before {
+  content: "\e60a";
+}
+
+.icon-xingerebang:before {
+  content: "\e60c";
+}
+
+.icon-zhibo:before {
+  content: "\e60d";
+}
+
+.icon-shequzhongxin:before {
+  content: "\e60e";
+}
+
+.icon-jiantou:before {
+  content: "\e608";
+}
+
+.icon-xiaoxi:before {
+  content: "\e604";
+}
+
+.icon-dahuiyuan:before {
+  content: "\e606";
+}
+
+.icon-lishi:before {
+  content: "\e61d";
+}
+
+.icon-fengche:before {
+  content: "\e827";
+}
+
+.icon-shoucang:before {
+  content: "\e63d";
+}
+
+.icon-chuangzuozhongxin:before {
+  content: "\e708";
+}
+
+.icon-bilibili:before {
+  content: "\e6b4";
+}
+
+.icon-TV:before {
+  content: "\e601";
+}
+
+.icon-search:before {
+  content: "\e602";
+}
+
+.icon-download:before {
+  content: "\e603";
+}
+

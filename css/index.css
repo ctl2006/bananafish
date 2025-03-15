@@ -1,0 +1,532 @@
+body{
+  font-weight: 400; 
+  font-family: PingFang SC,HarmonyOS_Regular,Helvetica Neue,Microsoft YaHei,sans-serif!important;
+
+}
+a{
+  cursor: pointer;
+}
+/* 动画效果 */
+@keyframes jump {
+  to{
+    transform: translateY(-4px);
+  }
+}
+.header{
+  position: relative;
+  width: 100%;
+  height: 155px;
+  padding: 0 24px;
+
+  background-color: pink;
+}
+.nav{
+  display: flex;
+  height: 64px;
+}
+.channel{
+  height: 110px;
+  /* background-color: green; */
+}
+.left-nav{
+  height: 64px;
+  /* background-color: gray; */
+  float: left;
+}
+
+
+/* 没设置这个属性之前，每个li盒子间有一段距离，这个设定消除了这段距离 */
+.header .left-nav ul {
+  display: flex;
+  justify-content: flex-start; /* 子元素从左到右排列 */
+  align-items: center; /* 子元素垂直居中 */
+}
+.header .left-nav li {
+  display: flex;
+  justify-content: flex-start; /* 子元素从左到右排列 */
+  align-items: center; /* 子元素垂直居中 */
+  height: auto; /* 移除固定高度，让内容撑开 */
+}
+/* 左导航动画效果 */
+.header .left-nav li:hover{
+    animation: jump 0.21s alternate linear;
+}
+.header .left-nav li:first-child{
+  animation: jump 0;
+}
+.header .left-nav li:last-child{
+  animation: jump 0;
+}
+/* a标签是一个内联元素，它可以包含其他内联元素，如span。内联元素的样式通常会继承自其父元素，但是如果子元素有自己的样式声明，那么这些样式声明会覆盖父元素的样式。 */
+.header .left-nav a{
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+  margin: 0px 15px 0px 0px;
+  /* 要使文字在上下方向居中，要设置行高 */
+  line-height: 64px;
+  text-align: center;
+  
+}
+.header .left-nav .icon-TV{
+  font-size: 18px;
+  margin-right: 6px;
+} 
+.header .left-nav .icon-download{
+  /* 这是字体图标，要按文字的方式加css而不是盒子 */
+  font-size: 16px;
+  margin-right: 6px;
+}
+.header .left-nav span{
+  display: inline-block;
+  height: 64px;
+}
+.header .left-nav ul li:first-child{
+  display: flex;
+  justify-content: flex-start; /* 子元素从左到右排列 */
+  align-items: center; /* 子元素垂直居中 */
+}
+.search{
+  display: flex;
+  justify-content: space-between;
+  width: 287px;
+  height: 40px;
+  margin: 12px 0;
+  border-radius: 8px;
+  background-color: #f1f2f3;
+}
+
+.search input{
+  flex: 1;
+  width: 0;
+  padding: 0 48px 0 4px;
+  margin-left: 10px;
+
+  background-color: transparent;
+}
+
+.header .search a{
+  margin-right: 15px;
+}
+
+.header .search .icon-search{
+  font-size: 17px;
+  line-height: 40px;
+  text-align: center;
+}
+/* 右导航区域 */
+.right-nav{
+  display: flex;
+  flex: 1;
+  /* background-color: red; */
+  height: 64px;
+}
+.right-nav ul{
+  display: flex;
+
+}
+.right-nav li{
+  display: flex;
+  margin-left: 20px;
+}
+.right-nav li a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  justify-content: center;
+
+}
+
+/* right-nav的字体图标 */
+/* line-height属性用于设置行高，对于单行文本的元素，
+当line-height的值等于元素的高度时，文本会在该元素内垂直居中。
+right-nav里的每个li元素高度为 64px，字体图标作为li元素内的文本内容，
+通过设置相同高度的行高，实现了垂直方向上的居中显示。 */
+.right-nav li .icon-dahuiyuan{
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.right-nav li .icon-dahuiyuan:hover{
+  animation: jump 0.21s alternate linear;
+
+}
+.right-nav li a span.right-nav-text{
+  display: inline-block;
+  font-size: 13px;
+  /* background-color: gray; */
+  color: #fff;
+}
+.right-nav li .icon-xiaoxi{  
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 5px;
+
+}
+.right-nav li .icon-xiaoxi:hover{
+  animation: jump 0.21s alternate linear;
+
+}
+.right-nav li .icon-fengche{
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 5px;
+
+}
+.right-nav li .icon-fengche:hover{
+  animation: jump 0.21s alternate linear;
+
+}
+.right-nav li .icon-shoucang{
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 5px;
+
+}
+.right-nav li .icon-shoucang:hover{
+  animation: jump 0.21s alternate linear;
+
+}
+.right-nav li .icon-lishi{
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 5px;
+
+}
+.right-nav li .icon-lishi:hover{
+  animation: jump 0.21s alternate linear;
+
+}
+.right-nav li .icon-chuangzuozhongxin{
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 5px;
+
+}
+.right-nav li .icon-chuangzuozhongxin:hover{
+  animation: jump 0.21s alternate linear;
+
+}
+.header-upload-entry__icon{
+  fill: #fff;
+  margin-right: 5px;
+}
+.header-upload-entry__icon path{
+  fill: currentColor;
+  stroke: #fff;
+  fill: #fb7299;
+}
+.right-nav .user img{
+  border-radius: 50%;
+  border: 2px solid white;
+  width: 38px;
+  height: 38px;
+  justify-self: center;
+}
+/* 投稿区域 
+固定的宽高改变了该元素的内在尺寸。
+这使得它与其他未设置固定尺寸的.right-nav li元素在布局上产生差异。
+Flexbox 布局是基于内容和可用空间来分配和对齐元素的，
+固定的宽高打破了这种自动分配机制。
+虽然align-items: center和justify-content: center属性依然存在，
+但由于元素尺寸的强制改变，这些属性无法像之前那样正常发挥作用，
+导致投稿区域失去了垂直居中效果。*/
+.right-nav li:last-child a{
+  width: 90px;
+  height: 34px;
+  border-radius: 8px;
+  background-color: #fb7299;
+  color: #fff;
+  display: flex;  
+  flex-direction: row;
+  align-items: center;  
+  margin: auto 0 auto 20px;
+  transition: 0.4s;
+}
+.right-nav li:last-child a:hover{
+  background-color: #fc88a9;
+}
+.logo a{
+  font-size: 0;
+}
+.logo img{
+  position: absolute;
+  left: 65px;
+  display: inline-block;
+  width: 162px;
+  height: 78px;
+
+}
+/* 左频道 */
+.channel{
+  padding: 0 60px;
+  display: flex;
+}
+.left-channel{
+  display: flex;
+  width: 140px;
+  margin-right: 8px;
+  /* background-color: red; */
+}
+.left-channel-left{
+  width: 46px;  
+  margin-right: 24px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.left-channel-right{
+  width: 46px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.left-channel-dongtai{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  margin: 19px 24px 6px 0;
+  background-color: #ff9212;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.left-channel-dongtai:hover{
+  background-color: #ff9e2c;
+}
+.channel .left-channel .left-channel-dongtai .icon-fengche{
+  font-size: 25px;
+  color: #fff;
+}
+.channel .left-channel .left-channel-dongtai .left-channel-text{
+  display: inline-block;
+}
+.left-channel-remen{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  margin: 19px 0 6px 0;
+  background-color: #f07775;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.left-channel-remen:hover{
+  background-color: #f38e8c;
+}
+/* 主频道 */
+.main-channel{
+  width: 917px;
+  height: 66px;
+  /* background-color: red; */
+  margin: 22px 0 22px 0;  
+  border-right: 1px solid #e3e5e7;
+
+}
+.main-channel ul{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* 使用align - content: flex - start;可以消除换行后每一列li的间距 */
+  align-content: flex-start;
+  /* 如果ul没有设置高度，子元素无法实现在垂直方向上换行 */
+  height: 66px;
+}
+.main-channel ul li{
+  display: flex;
+  width: 73.45px;
+
+}
+/* 奇数li */
+.main-channel ul li:nth-child(2n+1){
+  margin: 0 8px 5px 0;
+}
+/* 偶数li */
+.main-channel ul li:nth-child(2n){
+  margin: 5px 5px 0 0;
+}
+.main-channel ul li a{
+  width: 73.45px;
+  height: 28px;
+  font-size: 13px;
+  text-align: center;
+  line-height: 28px;
+  background-color: #f6f7f8;
+  border-radius: 6px;
+  border: 1px solid #f1f2f3;
+  color: #61666d;
+  letter-spacing: 2px;
+  transition: all 0.5s;
+}
+.main-channel ul li a:hover{
+  background-color: #e3e5e7;
+  color: black;
+}
+.main-channel li a .icon-jiantou{
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 10px;
+  transition: all 0.5s;
+}
+/* 使鼠标不只是悬停在字体图标的地方才能触发过渡效果，悬停在盒子上就能触发 */
+.main-channel li a:hover .icon-jiantou{
+  transform: rotate(180deg);
+
+}
+/* 右频道 */
+.right-channel{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  height: 66px;
+  /* background-color: aqua; */
+  margin:22px 0 22px 0 ;
+
+}
+.right-channel a{
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: #61666d;
+  height: 28px;  
+  margin-left: 15px;
+  transition: 0.5s;
+}
+.right-channel a:hover{
+  color: #00aeec;
+}
+.right-channel a:nth-child(-n+4){
+  margin-bottom: 10px;
+}
+.right-channel a .icon-zhuanlan{
+  line-height: 28px;
+  margin-right: 4px;  
+  font-size: 20px;  
+
+}
+.right-channel a .icon-huodong{
+  line-height: 28px;
+  margin-right: 4px;  
+  font-size: 20px;  
+
+}
+.right-channel a .icon-shequzhongxin{
+  line-height: 28px;
+  margin-right: 4px;  
+  font-size: 20px;  
+
+}
+.right-channel a .icon-xingerebang{
+  line-height: 28px;
+  margin-right: 4px;  
+  font-size: 20px;  
+
+}
+.right-channel a .icon-ketang{
+  line-height: 28px;
+  margin-right: 4px;  
+  font-size: 20px;  
+
+}
+.right-channel a .icon-zhibo{
+  line-height: 28px;
+  margin-right: 4px;  
+  font-size: 20px;  
+
+}
+
+.right-channel .right-channel-text{
+  font-size: 13px;
+  line-height: 28px;
+  letter-spacing: 2px;
+}
+/* 视频区域 */
+.video{
+  display: flex;
+  height: 500px;
+  padding: 0 60px;
+  /* background-color: blue; */
+}
+.video .video-left{
+  width: 510px;
+  height: 370.63px;
+  background-color: #61666d;  
+  border-radius: 8px;
+  line-height: 370.63px;
+  text-align: center;
+  font-size: 50px;
+}
+.video .video-right{
+  flex: 1;
+}
+.video .video-right ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+.video .video-right ul li{
+  justify-content: space-between;
+  width: 245px;
+  height: 198.81px;
+  margin-left: 19px;
+  margin-bottom: 19px;
+}
+.video .video-right ul li .pic{
+  width: 245px;
+  height: 137.81px;
+  background-color: #61666d;
+  line-height: 137.81px;
+  text-align: center;
+  font-size: 25px;  
+  border-radius: 8px;
+
+}
+.video .video-right ul li h3{
+  height: 44px;
+  margin-top: 10px;
+}
+.video-next{
+  display: flex;
+  height: 500px;
+  padding: 0 60px;
+}
+.video-next ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+.video-next ul li{
+  width: 245px;
+  height: 198.81px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.video-next ul li:nth-child(5n){
+  margin-right: 0;
+}
+.video-next ul li .pic{
+  width: 245px;
+  height: 137.81px;
+  background-color: #61666d;
+  line-height: 137.81px;
+  text-align: center;
+  font-size: 25px;  
+  border-radius: 8px;
+
+}
+.video-next ul li h3{
+  height: 44px;
+  margin-top: 10px;
+}
